@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do SITE</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">TO-DO LIST</h1>
+        <div class="search">
+            <input id="inp" class="input" type="text" placeholder=" SEARCH TASK">
+        </div>
+    </div>
+    <div class="content">
+        <form class="colour">
+            <fieldset class="box3">
+                <label for="light">Light</label>
+                <input type="radio" name="theme" id="light">
+
+                <label for="blue">Blue</label>
+                <input type="radio" name="theme" id="blue" >
+
+                <label for="green">Green</label>
+                <input type="radio" name="theme" id="green">
+
+                <label for="dark">Dark</label>
+                <input type="radio" name="theme" id="dark" >
+
+            </fieldset>
+        </form>
+        <div id="newel" class="element_add">
+            <input id="box1" class="box" type="text" placeholder=" ENTER NEW TASK">
+            <button id="box2" class="box2">SUBMIT</button>
+        </div>
+        <div  class="container">
+            <h1 class="itm">TASKS:-</h1>
+            <ul id="grp" class="group">
+            <li draggable="true" class="elements">TASK 1 <button class="del">X</button></li>
+            <li draggable="true" class="elements">TASK 2 <button class="del">X</button></li>
+            <li draggable="true" class="elements">TASK 3 <button class="del">X</button></li>
+            <li draggable="true" class="elements">TASK 4 <button class="del">X</button></li>
+            </ul>
+        </div>    
+    <div>
+
+<script src="todo.js"></script>
+</body>
+</html>

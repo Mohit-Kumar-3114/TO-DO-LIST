@@ -1,0 +1,147 @@
+:root{
+    --bg-color : white;
+}
+.content{
+    background-color:var(--bg-color);
+}
+#body{
+    display: grid;
+}
+.header{
+    height: 25vh;
+    display: flex;
+    background-color: #edb574;
+    align-items: center;
+}
+.title{
+    width: 45vw;
+    padding-left: 70px;
+    font-size: 36px;
+    
+}
+.search{
+    width: 55vw;
+    display: flex;
+    justify-content: right;
+    padding-right: 50px;
+    font-size: xx-large;
+}
+.input{
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: beige;
+    border: 3px solid black;
+    font-weight: 700;
+}
+.element_add{
+    padding-left: 65px;
+    padding-bottom: 15px;
+}
+.box{
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: white;
+    border: 3px solid black;
+    font-weight: 700;
+}
+.box2{
+    font-size: 20px;
+    border-radius: 15px;
+    border: 3px solid black;
+    font-weight: 500;
+    background-color: white;
+    margin-left: 25px;
+}
+.elements{
+    list-style-type: none;
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 35px;
+    padding-left: 20px;
+    padding-top: 7px;
+    margin-left: 20px;
+    width: 80vw;
+    font-size: 20px;
+    background-color: white;
+}
+.itm{
+    padding-left: 70px;
+}
+
+.colour{
+    padding-top: 20px;
+}
+.del{
+    font-size: 20px;
+    border-radius: 9px;
+    background-color: red;
+    position: absolute;
+    left: 84vw;
+}
+
+.box3{
+    margin-left: 63px;
+    border-radius: 20px;
+    border: 3px solid black;
+    margin-bottom: 20px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgb(200, 189, 189);
+
+}
+input[type="radio"]{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 5px;
+    outline: 2px solid var(--radio-color);
+    outline-offset: 3px;
+    margin: 0px 25px;
+
+}
+
+
+input[type="radio"]:checked{
+    background-color: var(--radio-color);
+
+}
+
+#light{
+    --radio-color: beige
+}
+
+#blue{
+    --radio-color: #8ecae6
+}
+
+#green{
+    --radio-color: #52b788
+}
+
+#dark{
+    --radio-color: grey
+}
+
+
+:root:has(#light:checked){
+    --bg-color: beige
+}
+
+:root:has(#green:checked){
+    --bg-color: #52b788
+}
+
+:root:has(#blue:checked){
+    --bg-color: #8ecae6
+}
+
+:root:has(#dark:checked){
+    --bg-color: grey
+}
